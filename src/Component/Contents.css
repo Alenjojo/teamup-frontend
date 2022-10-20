@@ -1,0 +1,57 @@
+.contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 90px;
+  margin-top: 130px;
+}
+.quote {
+  position: relative;
+}
+.quote > h1 {
+  font-weight: 600;
+  font-size: 4.25rem;
+}
+.quote > p {
+  font-weight: 400;
+  font-size: 1.49rem;
+  color: #939393;
+}
+.start-btn {
+  margin-top: 24px;
+  position: absolute;
+  left: 5px;
+  font-size: 1.2em;
+  border-radius: 21px;
+  padding: 5.5px 16.5px 12px 16.5px;
+  color:#FFFFFF;
+  background-color: #20C6FF;
+  background: linear-gradient(99.34deg, #FFFFFF -16.52%, #9FFCD4 -16.51%, #20C6FF 114.32%);
+box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+ }
+.folders{
+  position:relative;
+}
+.folders > .green{
+  position:absolute;
+  text-align: right;
+  display:block;
+  font-size: 500px;
+  top:-300px;
+  left:-110px;
+  z-index:-3;
+  color: #3EF9A980;
+  background: linear-gradient(140.44deg, rgba(62, 249, 169, 0.5) 13.69%, rgba(62, 249, 169, 0) 301.87%);
+
+}
+.folders > .black{
+  text-align: right;
+  display:block;
+  font-size: 300px; 
+}
+.folders > .blue{
+  text-align: right;
+  display:block;
+  font-size: 300px; 
+  color:blue;
+} 

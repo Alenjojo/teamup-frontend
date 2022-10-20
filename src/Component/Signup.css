@@ -1,0 +1,58 @@
+.signup-page {
+  margin-left: 5%;
+  text-align: left;
+}
+.signup-form {
+  margin-top: 20px;
+}
+.signup-form > div > input {
+  border-radius: 10px;
+  border-color: #3ef9a980;
+  background-color: linear-gradient(
+    140.44deg,
+    rgba(62, 249, 169, 0.5) 13.69%,
+    rgba(62, 249, 169, 0) 301.87%
+  );
+  min-height: 35px;
+  width: 240px;
+  max-width: 240px;
+  margin-bottom: 20px;
+  padding-left: 27px;
+}
+.data {
+  position: relative;
+}
+.signup-form > div > label {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 6.94px;
+}
+.signup-form > button {
+  min-height: 35px;
+  width: 270px;
+  max-width: 270px;
+  font-size: 1.11em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #3ef9a9;
+  background: linear-gradient(
+    90.71deg,
+    #3ef9a9 -11.86%,
+    rgba(62, 249, 169, 0) 164.69%
+  );
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.2));
+}
+.horizonatl-rule {
+  height: 1.5px;
+  max-width: 258px;
+  background-color: grey;
+  opacity: 25%;
+  margin-bottom: 20px;
+}
+.signup-form > p {
+  font-weight: 400;
+  font-size: 0.47rem;
+  opacity: 50%;
+}
