@@ -37,11 +37,14 @@
 }
 
 /* end-section */
+.end-section {
+  display: flex;
+}
 .end-section > button {
   font-size: 1.62em;
   padding: 3px 10px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin: 10px;
   border: none;
 }
 .end-section > .signup {
@@ -58,4 +61,13 @@
   min-width: 2.5px;
   margin: 0px 14px;
   margin-top: 10px;
+}
+.bar {
+  /* position: absolute; */
+  width: 0px;
+  height: 24px;
+  left: 1471px;
+  top: 80px;
+
+  border: 1px solid #a4a4a4;
 }

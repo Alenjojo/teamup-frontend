@@ -32,7 +32,9 @@ export default function Navbar() {
 
       <div className="end-section">
         <button className="signup">Sign up</button>
-        <img className="pipe" src="./images/pipe.png" alt="pipe" />
+        <div className="pipe">
+          <div className="bar"></div>
+        </div>
         <button className="login">Log in</button>
       </div>
     </div>
