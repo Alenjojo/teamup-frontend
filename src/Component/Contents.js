@@ -11,9 +11,9 @@ export default function Content() {
       </div>
 
       <div className="folders">
-        <i className="green fa-solid fa-square"></i>
-        <i className="black fa-solid fa-folder"></i>
-        <i className="blue fa-solid fa-folder"></i>
+        <img className="green" src="./images/green_folder.png"></img>
+        <img className="black" src="./images/black_folder.png"></img>
+        <img className="blue" src="./images/blue_folder.png"></img>
       </div>
     </div>
   );

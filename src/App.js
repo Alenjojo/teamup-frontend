@@ -5,9 +5,11 @@ import Signup from "./Component/Signup.js";
 
 export default function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Content />
+    <div className="app">
+      <div className="app_home">
+        <Navbar />
+        <Content />
+      </div>
       {/* <Signup /> */}
     </div>
   );

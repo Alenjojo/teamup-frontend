@@ -24,34 +24,42 @@
   font-size: 1.2em;
   border-radius: 21px;
   padding: 5.5px 16.5px 12px 16.5px;
-  color:#FFFFFF;
-  background-color: #20C6FF;
-  background: linear-gradient(99.34deg, #FFFFFF -16.52%, #9FFCD4 -16.51%, #20C6FF 114.32%);
-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
- }
-.folders{
-  position:relative;
+  color: #ffffff;
+  background-color: #20c6ff;
+  background: linear-gradient(
+    99.34deg,
+    #ffffff -16.52%,
+    #9ffcd4 -16.51%,
+    #20c6ff 114.32%
+  );
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
 }
-.folders > .green{
-  position:absolute;
-  text-align: right;
-  display:block;
-  font-size: 500px;
-  top:-300px;
-  left:-110px;
-  z-index:-3;
-  color: #3EF9A980;
-  background: linear-gradient(140.44deg, rgba(62, 249, 169, 0.5) 13.69%, rgba(62, 249, 169, 0) 301.87%);
+.folders {
+  z-index: -1;
+}
 
+.green {
+  /* green_folder */
+
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  right: -15%;
+  top: -50px;
 }
-.folders > .black{
-  text-align: right;
-  display:block;
-  font-size: 300px; 
+.black {
+  /* black_folder */
+
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  right: -15%;
+  top: 120px;
 }
-.folders > .blue{
-  text-align: right;
-  display:block;
-  font-size: 300px; 
-  color:blue;
-} 
+.blue {
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  right: -15%;
+  top: 420px;
+}
