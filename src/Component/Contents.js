@@ -14,17 +14,17 @@ export default function Content() {
         <img
           className="green"
           alt="Green Folder"
-          src="https://firebasestorage.googleapis.com/v0/b/gggg-55aad.appspot.com/o/website%2Fgreen_folder.webp?alt=media&token=e7fdf43b-2c5a-4a6f-9214-a23cd823fc00"
+          src="./images/green_folder.svg"
         ></img>
         <img
           className="black"
           alt="Black Folder"
-          src="https://firebasestorage.googleapis.com/v0/b/gggg-55aad.appspot.com/o/website%2Fblack_folder.webp?alt=media&token=2ac22d71-b25a-41cf-b0fa-b144b4b1c2b8"
+          src="./images/black_folder.svg"
         ></img>
         <img
           className="blue"
           alt="Blue Folder"
-          src="https://firebasestorage.googleapis.com/v0/b/gggg-55aad.appspot.com/o/website%2Fblue_folder.webp?alt=media&token=4b3940d8-7154-4ad0-9a4b-eb8c7451be64"
+          src="./images/blue_folder.svg"
         ></img>
       </div>
     </div>

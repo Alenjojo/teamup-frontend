@@ -45,7 +45,7 @@
   width: 700px;
   height: 550px;
   right: -15%;
-  top: -50px;
+  top: -150px;
 }
 .black {
   /* black_folder */
@@ -53,13 +53,13 @@
   position: absolute;
   width: 700px;
   height: 550px;
-  right: -15%;
+  right: -10%;
   top: 120px;
 }
 .blue {
   position: absolute;
   width: 700px;
   height: 550px;
-  right: -15%;
+  right: -10%;
   top: 420px;
 }
