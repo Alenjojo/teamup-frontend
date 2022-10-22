@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="./images/teamup_logo.png" alt="Logo.png" />
+        <img src={require("../assets/teamup_logo.png")} alt="Logo.png" />
         <h1>TeamUp </h1>
       </div>
 

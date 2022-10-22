@@ -1,4 +1,7 @@
 import "./Contents.css";
+import { ReactComponent as GreenFolder } from "../assets/green_folder.svg";
+import { ReactComponent as BlackFolder } from "../assets/black_folder.svg";
+import { ReactComponent as BlueFolder } from "../assets/blue_folder.svg";
 
 export default function Content() {
   return (
@@ -11,21 +14,9 @@ export default function Content() {
       </div>
 
       <div className="folders">
-        <img
-          className="green"
-          alt="Green Folder"
-          src="./images/green_folder.svg"
-        ></img>
-        <img
-          className="black"
-          alt="Black Folder"
-          src="./images/black_folder.svg"
-        ></img>
-        <img
-          className="blue"
-          alt="Blue Folder"
-          src="./images/blue_folder.svg"
-        ></img>
+        <GreenFolder className="green" />
+        <BlackFolder className="black" />
+        <BlueFolder className="blue" />
       </div>
     </div>
   );
