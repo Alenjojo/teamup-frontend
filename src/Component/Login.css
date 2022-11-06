@@ -1,0 +1,89 @@
+.login-main{
+    
+    height: 84.6vh;
+    position: relative;
+    overflow: hidden;
+
+}
+.logo-common{
+    position:absolute;
+}
+.logo-pic1{
+    rotate: 209deg;
+    fill: #4CD0FD;
+    opacity: 70%;
+    height: 530px;
+    width: 548px;
+    left: -19.94%;
+    right: 72.43%;
+    top: -3.2%;
+    bottom: 24.53%;
+}
+
+.logo-pic2{
+    fill: #4CD0FD;
+    opacity: 50%;
+    height: 377px;
+    width: 365px;
+    left: 11%;
+    bottom: -38%;
+    
+}
+
+.logo-pic3{
+    fill: #4CD0FD;
+    opacity: 40%;
+    height: 257px;
+    width: 267px;
+    rotate: 127deg;
+    bottom: -30%;
+    left: 36%;
+}
+.login-form{
+    margin-top: 48px;
+}
+.login-form > h1{
+    font-weight: 600;
+    font-size: 3rem;
+    padding-bottom: 12px;
+}
+.login-form > .req-info{
+    margin:0;
+    font-weight: 400;
+    opacity: 80%;
+    padding-top: 17px;
+    margin-right: 424px;
+    padding-bottom: 4px;
+  }
+.login-form > div > input{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px #20C6FF;
+    min-height: 50px;
+    width:30vw ;
+    max-width: 30vw;
+    padding-left: 38px;
+}
+  .login-form > div > label {
+    position: relative;
+    z-index: 1;
+    top: 2%;
+    left:2%;
+  
+  }
+  .login-form > button {
+    margin-top: 24px;
+    min-height: 50px;
+    width: 32vw;
+    max-width: 32vw;
+    font-size: 1.7em;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #20C6FF;
+    background: linear-gradient(91.23deg, #20C6FF -11.99%, rgba(245, 245, 245, 0) 465.09%);
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.1));
+  }
+
+
+

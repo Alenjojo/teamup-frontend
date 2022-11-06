@@ -1,22 +1,29 @@
 .signup-page {
-  margin-left: 5%;
+  margin-left: 8%;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 .signup-form {
-  margin-top: 20px;
+  font-size: 1rem;
+}
+.signup-form > h1 {
+  font-size:3rem;
+}
+.signup-form > .req-info{
+  margin:0;
+  padding: 0;
+  font-weight: 400;
+  opacity: 80%;
+  padding-top: 17px;
 }
 .signup-form > div > input {
   border-radius: 10px;
-  border-color: #3ef9a980;
-  background-color: linear-gradient(
-    140.44deg,
-    rgba(62, 249, 169, 0.5) 13.69%,
-    rgba(62, 249, 169, 0) 301.87%
-  );
-  min-height: 35px;
-  width: 240px;
-  max-width: 240px;
-  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0px 0px 10px #3EF9A9;
+  min-height: 50px;
+  width:30vw ;
+  max-width: 30vw;
   padding-left: 27px;
 }
 .data {
@@ -25,34 +32,46 @@
 .signup-form > div > label {
   position: absolute;
   z-index: 1;
-  left: 10px;
-  top: 6.94px;
+  top: 30%;
+  left:2.3%;
+
 }
 .signup-form > button {
-  min-height: 35px;
-  width: 270px;
-  max-width: 270px;
-  font-size: 1.11em;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 24px;
+  min-height: 50px;
+  width: 32vw;
+  max-width: 32vw;
+  font-size: 1.7em;
   border-radius: 10px;
-  background-color: #3ef9a9;
-  background: linear-gradient(
-    90.71deg,
-    #3ef9a9 -11.86%,
-    rgba(62, 249, 169, 0) 164.69%
-  );
-  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.2));
+  color: white;
+  border: none;
+  background-color: #3EF9A9;
+  background: linear-gradient(91.39deg, #3EF9A9 -12.03%, #F9F9F9 376.2%);
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 .horizonatl-rule {
   height: 1.5px;
-  max-width: 258px;
+  max-width: 32vw;
   background-color: grey;
   opacity: 25%;
-  margin-bottom: 20px;
+  margin-top: 14px;
+  margin-bottom: 15px;
 }
-.signup-form > p {
+.signup-form > .policy {
   font-weight: 400;
-  font-size: 0.47rem;
+  font-size: 0.88rem;
   opacity: 50%;
+}
+.logo-box{
+  position: relative;
+  background-color: transparent;
+  height: 84.6vh;
+  width: 40vw;
+  overflow: hidden;
+}
+.logo-lg{ 
+  height: 694px;
+  position: absolute;
+  bottom: -34%;
+  left: -7%;
 }

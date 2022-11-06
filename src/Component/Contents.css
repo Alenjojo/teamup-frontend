@@ -1,12 +1,16 @@
+.all-content{
+position: relative;
+overflow-x: hidden;
+height: 100vw;
+}
 .contents {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-left: 90px;
   margin-top: 130px;
 }
-.quote {
-  position: relative;
+.quote{
+  text-align: left;
 }
 .quote > h1 {
   font-weight: 600;
@@ -14,24 +18,20 @@
 }
 .quote > p {
   font-weight: 400;
-  font-size: 1.49rem;
+  font-size: 1.42rem;
+  opacity: 58%;
+  margin: 3px 0;
   color: #939393;
 }
 .start-btn {
   margin-top: 24px;
-  position: absolute;
-  left: 5px;
   font-size: 1.2em;
-  border-radius: 21px;
-  padding: 5.5px 16.5px 12px 16.5px;
+  border-radius: 12.4px;
+  padding: 5.5px 25px 10px 25px;
   color: #ffffff;
-  background-color: #20c6ff;
-  background: linear-gradient(
-    99.34deg,
-    #ffffff -16.52%,
-    #9ffcd4 -16.51%,
-    #20c6ff 114.32%
-  );
+  border: none;
+  background-color: #3EF9A9B2;
+  background: linear-gradient(98.87deg, rgba(62, 249, 169, 0.7) -57.95%, rgba(32, 198, 255, 0.7) 120.4%);
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
 }
 .folders {
