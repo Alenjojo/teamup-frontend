@@ -24,7 +24,9 @@
   min-height: 50px;
   width:30vw ;
   max-width: 30vw;
-  padding-left: 27px;
+  padding-left: 34px;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 .data {
   position: relative;

@@ -73,9 +73,9 @@
   }
   .login-form > button {
     margin-top: 24px;
+    margin-left: 13px;
     min-height: 50px;
-    width: 32vw;
-    max-width: 32vw;
+    width: max(348px, 32.6vw);
     font-size: 1.7em;
     border-radius: 10px;
     color: white;

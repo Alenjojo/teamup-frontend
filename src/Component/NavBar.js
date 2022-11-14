@@ -38,13 +38,13 @@ export default function Navbar(props) {
 
   return (
     <div className="navbar">
-      <div className="logo">
+      <div className="logo"
+       onClick={() => {
+        navigate("/");
+      }}>
         <img
           src={require("../assets/teamup_logo.png")}
           alt="Logo.png"
-          onClick={() => {
-            navigate("/");
-          }}
         />
         <h1>TeamUp </h1>
       </div>
