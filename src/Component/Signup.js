@@ -1,4 +1,5 @@
 import "./Signup.css";
+import{motion} from "framer-motion"
 import Navbar from "./NavBar.js";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { useState } from "react";
@@ -36,6 +37,8 @@ export default function Signup() {
         .catch(function (error) {
           console.log(error);
         });
+    }else{
+      
     }
   };
 
@@ -50,30 +53,35 @@ export default function Signup() {
             <label for="name">
               <i class="fa-solid fa-user"></i>
             </label>
-            <input id="name" />
+            <input id="name" onChange={(e) => setName(e.target.value)}/>
           </div>
           <p className="req-info">Email</p>
           <div className="data">
             <label for="email">
               <i className="fa-solid fa-envelope"></i>
             </label>
-            <input id="email" />
+            <input  id="email" onChange={(e) => setEmail(e.target.value)}/>
           </div>
           <p className="req-info">Password</p>
           <div className="data">
             <label for="password">
               <i className="fa-solid fa-lock"></i>
             </label>
-            <input id="password" />
+            <input id="password" onChange={(e) => setPassword(e.target.value)}/>
           </div>
           <p className="req-info">Confirm password</p>
           <div className="data">
             <label for="confirm-password">
               <i className="fa-solid fa-lock"></i>
             </label>
-            <input id="confirm-password" />
+            <input id="confirm-password" onChange={(e) => setRetypePassword(e.target.value)}/>
           </div>
-          <button onClick={handleSubmit}>Team Up</button>
+          <motion.button 
+            whileHover={{ scale: 1.023 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={handleSubmit}
+          >Team Up
+          </motion.button>
           <div className="horizonatl-rule"></div>
           <p className="policy">
             By clicking the button above, you agree to our Terms of Service and

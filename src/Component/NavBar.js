@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import {motion} from "framer-motion"
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar(props) {
@@ -9,14 +10,17 @@ export default function Navbar(props) {
 
   function signupEdit() {
     return (
-      <button
+      <motion.button
+        whileHover={{ scale: 1.04 }}
+        whileTap={{ scale: 0.93 }}
+
         onClick={() => {
           navigate(linkText);
         }}
         className="login"
       >
         {buttonText}
-      </button>
+      </motion.button>
     );
   }
 
@@ -78,25 +82,31 @@ export default function Navbar(props) {
             </ul>
           </nav>
           <div className="end-section">
-            <button
+            <motion.button
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.93 }}
+
               className="signup"
               onClick={() => {
                 navigate("/signup");
               }}
             >
               Sign Up
-            </button>
+            </motion.button>
             <div className="pipe">
               <div className="bar"></div>
             </div>
-            <button
+            <motion.button
+             whileHover={{ scale: 1.04 }}
+             whileTap={{ scale: 0.93 }}
+             
               className="login"
               onClick={() => {
                 navigate("/login");
               }}
             >
               {buttonText}
-            </button>
+            </motion.button>
           </div>
         </>
       )}

@@ -1,4 +1,5 @@
 import "./Login.css";
+import{motion} from "framer-motion"
 import Navbar from "./NavBar.js";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { useState } from "react";
@@ -26,6 +27,9 @@ export default function Login() {
       data: payload,
     })
       .then(function (response) {
+        if(response.status == 200){
+          
+        }
         console.log(response);
       })
       .catch(function (error) {
@@ -52,16 +56,20 @@ export default function Login() {
               <label className="inputs" for="email">
                 <i className="fa-solid fa-envelope icons"></i>
               </label>
-              <input id="email" />
+              <input id="email" onChange={(e) => setEmail(e.target.value)}/>
             </div>
             <p className="req-info">Password</p>
             <div className="data">
               <label for="password">
                 <i className=" icons fa-solid fa-lock "></i>
               </label>
-              <input className="inputs" id="password" />
+              <input className="inputs" id="password" onChange={(e) => setPassword(e.target.value)}/>
             </div>
-            <button onClick={handleSubmit}>LOGIN</button>
+            <motion.button 
+            whileHover={{ scale: 1.023 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={handleSubmit}>LOGIN
+            </motion.button>
           </form>
         </div>
       </div>
