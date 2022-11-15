@@ -1,9 +1,10 @@
-import "./Login.css";
-import{motion} from "framer-motion"
-import Navbar from "./NavBar.js";
-import { ReactComponent as Logo } from "../assets/logo.svg";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import axios from "axios";
+import { ReactComponent as Logo } from "../assets/logo.svg";
+
+import "./Login.css";
+import Navbar from "./NavBar.js";
 
 export default function Login() {
   const [email, setEmail] = useState();
@@ -27,13 +28,15 @@ export default function Login() {
       data: payload,
     })
       .then(function (response) {
-        if(response.status == 200){
-          
+        if (response.status === 200) {
+          console.log(response.status);
+          //Navigate
+        } else {
+          //Something went wrong
         }
-        console.log(response);
       })
       .catch(function (error) {
-        console.log(error);
+        console.log(error.response.status);
       });
   };
 
@@ -56,19 +59,25 @@ export default function Login() {
               <label className="inputs" for="email">
                 <i className="fa-solid fa-envelope icons"></i>
               </label>
-              <input id="email" onChange={(e) => setEmail(e.target.value)}/>
+              <input id="email" onChange={(e) => setEmail(e.target.value)} />
             </div>
             <p className="req-info">Password</p>
             <div className="data">
               <label for="password">
                 <i className=" icons fa-solid fa-lock "></i>
               </label>
-              <input className="inputs" id="password" onChange={(e) => setPassword(e.target.value)}/>
+              <input
+                className="inputs"
+                id="password"
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
-            <motion.button 
-            whileHover={{ scale: 1.023 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={handleSubmit}>LOGIN
+            <motion.button
+              whileHover={{ scale: 1.023 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={handleSubmit}
+            >
+              LOGIN
             </motion.button>
           </form>
         </div>

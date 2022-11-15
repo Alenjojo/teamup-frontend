@@ -1,5 +1,5 @@
 import "./Signup.css";
-import{motion} from "framer-motion"
+import { motion } from "framer-motion";
 import Navbar from "./NavBar.js";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { useState } from "react";
@@ -32,13 +32,17 @@ export default function Signup() {
         data: payload,
       })
         .then(function (response) {
-          console.log(response);
+          if (response.status === 200) {
+            console.log(response.status);
+            //Navigate
+          } else {
+            //Something went wrong
+          }
         })
         .catch(function (error) {
-          console.log(error);
+          console.log(error.response.status);
         });
-    }else{
-      
+    } else {
     }
   };
 
@@ -53,34 +57,41 @@ export default function Signup() {
             <label for="name">
               <i class="fa-solid fa-user"></i>
             </label>
-            <input id="name" onChange={(e) => setName(e.target.value)}/>
+            <input id="name" onChange={(e) => setName(e.target.value)} />
           </div>
           <p className="req-info">Email</p>
           <div className="data">
             <label for="email">
               <i className="fa-solid fa-envelope"></i>
             </label>
-            <input  id="email" onChange={(e) => setEmail(e.target.value)}/>
+            <input id="email" onChange={(e) => setEmail(e.target.value)} />
           </div>
           <p className="req-info">Password</p>
           <div className="data">
             <label for="password">
               <i className="fa-solid fa-lock"></i>
             </label>
-            <input id="password" onChange={(e) => setPassword(e.target.value)}/>
+            <input
+              id="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
           <p className="req-info">Confirm password</p>
           <div className="data">
             <label for="confirm-password">
               <i className="fa-solid fa-lock"></i>
             </label>
-            <input id="confirm-password" onChange={(e) => setRetypePassword(e.target.value)}/>
+            <input
+              id="confirm-password"
+              onChange={(e) => setRetypePassword(e.target.value)}
+            />
           </div>
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.023 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleSubmit}
-          >Team Up
+          >
+            Team Up
           </motion.button>
           <div className="horizonatl-rule"></div>
           <p className="policy">
