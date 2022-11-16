@@ -5,9 +5,17 @@ import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as GreenFolder } from "../assets/green_folder.svg";
 import { ReactComponent as BlackFolder } from "../assets/black_folder.svg";
 import { ReactComponent as BlueFolder } from "../assets/blue_folder.svg";
+import { useEffect } from "react";
 
 export default function Content() {
   let navigate = useNavigate();
+
+  useEffect(() => {
+    var userData = JSON.parse(localStorage.getItem("user-data"));
+    if (userData != null) {
+      navigate("/home");
+    }
+  });
   return (
     <div className="all-content">
       <Navbar />

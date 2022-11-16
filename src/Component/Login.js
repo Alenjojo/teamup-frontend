@@ -5,10 +5,13 @@ import { ReactComponent as Logo } from "../assets/logo.svg";
 
 import "./Login.css";
 import Navbar from "./NavBar.js";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+
+  let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +34,8 @@ export default function Login() {
         if (response.status === 200) {
           console.log(response.status);
           //Navigate
+          localStorage.setItem("user-data", JSON.stringify(response.data));
+          navigate("/home");
         } else {
           //Something went wrong
         }
