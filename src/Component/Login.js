@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import axios from "axios";
+import axios from "../Utils/axios-instance";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 
 import "./Login.css";
@@ -23,11 +23,7 @@ export default function Login() {
     //call login api
     axios({
       method: "post",
-      url: "https://team-up-v1.herokuapp.com/user/token",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json;charset=utf-8",
-      },
+      url: "user/token",
       data: payload,
     })
       .then(function (response) {

@@ -24,11 +24,7 @@ export default function Signup() {
       //call register api
       axios({
         method: "post",
-        url: "https://team-up-v1.herokuapp.com/user/register",
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Content-Type": "application/json;charset=utf-8",
-        },
+        url: "user/register",
         data: payload,
       })
         .then(function (response) {
