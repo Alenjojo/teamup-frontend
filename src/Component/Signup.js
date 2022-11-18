@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "./NavBar.js";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { useState } from "react";
-import axios from "axios";
+import axios from "../Utils/axios-instance";
 
 export default function Signup() {
   const [name, setName] = useState();
