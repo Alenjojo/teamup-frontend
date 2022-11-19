@@ -8,7 +8,7 @@ class Home extends Component {
       <div>
         <div className="flex justify-between h-screen">
           <div className="bg-stone-700 w-[20%]"></div>
-          <div className="bg-slate-400 w-[55%]">
+          <div className="w-[55%]">
             <About />
           </div>
           <div className="bg-orange-500 w-[25%]"></div>
