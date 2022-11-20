@@ -2,6 +2,36 @@ import React, { useState } from "react";
 import LineChart from "../Utils/LineChart";
 
 function About() {
+  const data = [
+    {
+      User: "raze",
+      Role: "runner",
+      Project: "proj A",
+      Time: "Nov 12th",
+      Status: "OnGoing",
+    },
+    {
+      User: "sage",
+      Role: "healer",
+      Project: "proj A",
+      Time: "Nov 12th",
+      Status: "Completed",
+    },
+    {
+      User: "skye",
+      Role: "blinder",
+      Project: "proj A",
+      Time: "Nov 12th",
+      Status: "Pending",
+    },
+    {
+      User: "raze1",
+      Role: "runner",
+      Project: "proj A",
+      Time: "Nov 12th",
+      Status: "OnGoing",
+    },
+  ];
   return (
     <div className="flex-col">
       <div className="flex-col text-left">
@@ -40,11 +70,26 @@ function About() {
         </div>
       </div>
       {/* Graph */}
-      
-      <div class=" rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-5  ">
-          <LineChart />
-          {/* <LineChart /> */}
+      <div className="rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-10">
+        <LineChart />
       </div>
+      {/* Trending Tasks ListView */}
+      <div className="rounded-lg overflow-hidden p-5 relative mx-10 mt-5 flex justify-around text-gray-500">
+        <div>USER</div>
+        <div>ROLE</div>
+        <div>PROJECT</div>
+        <div>TIME</div>
+        <div>STATUS</div>
+      </div>
+      {data.map((item) => (
+        <div className="rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-10 flex justify-around text-gray-500 mb-2">
+          <div>{item.User}</div>
+          <div>{item.Role}</div>
+          <div>{item.Project}</div>
+          <div>{item.Time}</div>
+          <div>{item.Status}</div>
+        </div>
+      ))}
     </div>
   );
 }

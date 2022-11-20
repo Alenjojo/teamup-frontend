@@ -56,9 +56,14 @@ function LineChart({ chartData }) {
       <h2 className="text-left">Tasks Analytics</h2>
       <Line
         data={state}
-        height={400}
-        width={800}
+        height={300}
+        width={700}
         options={{
+          scales: {
+            y: {
+              display: false,
+            },
+          },
           tension: 0.4,
           responsive: true,
           maintainAspectRatio: true,
