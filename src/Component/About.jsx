@@ -40,10 +40,10 @@ function About() {
         </div>
       </div>
       {/* Graph */}
-      
-      <div class=" rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-5  ">
-          <LineChart />
-          {/* <LineChart /> */}
+
+      <div class="rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-10">
+        <LineChart />
+        {/* <LineChart /> */}
       </div>
     </div>
   );

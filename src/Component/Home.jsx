@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Dashboard from "./Dashboard"
+import Dashboard from "./Dashboard";
 import About from "./About";
 
 class Home extends Component {
@@ -11,7 +11,7 @@ class Home extends Component {
           <div className="w-[20%]">
             <Dashboard />
           </div>
-          <div className="bg-slate-400 w-[55%]">
+          <div className="w-[55%]">
             <About />
           </div>
           <div className="bg-orange-500 w-[25%]"></div>
