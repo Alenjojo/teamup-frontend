@@ -40,11 +40,10 @@ function About() {
         </div>
       </div>
       {/* Graph */}
-      <div className="flex justify-center">
-        <div class="max-w-sm rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-5  w-full">
+      
+      <div class=" rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-5  ">
           <LineChart />
           {/* <LineChart /> */}
-        </div>
       </div>
     </div>
   );
