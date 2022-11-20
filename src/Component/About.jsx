@@ -9,9 +9,9 @@ function About() {
         <div className="mt-5 ml-8 text-4xl font-bold">.. tasks left</div>
       </div>
       {/* Search Bar */}
-      <div className="m-8">
+      <div className="mx-10 my-5">
         <div className="flex">
-          <div class="inset-y-0 left-0 flex items-center pl-3 pointer-events-none relative">
+          <div class="inset-y-0 left-0 flex items-center pl-3 pointer-events-none relative w-full mr-2">
             <div class="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
               <svg
                 aria-hidden="true"
@@ -34,15 +34,16 @@ function About() {
               required
             ></input>
           </div>
-          <button class="bg-indigo-500 rounded-3xl shadow-lg shadow-indigo-500/50 ...">
-            Subscribe
+          <button class="bg-indigo-500 rounded-3xl p-3 shadow-lg shadow-indigo-500/50">
+            Search
           </button>
         </div>
       </div>
       {/* Graph */}
       <div className="flex justify-center">
-        <div class="max-w-sm rounded-lg overflow-hidden shadow-xl bg-gray-100 p-5 w-full h-full">
+        <div class="max-w-sm rounded-lg overflow-hidden shadow-xl bg-gray-50 p-5 relative mx-5  w-full">
           <LineChart />
+          {/* <LineChart /> */}
         </div>
       </div>
     </div>
