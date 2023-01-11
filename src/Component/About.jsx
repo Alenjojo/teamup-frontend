@@ -41,7 +41,7 @@ function About() {
       {/* Search Bar */}
       <div className="mx-10 my-5">
         <div className="flex">
-          <div class="inset-y-0 left-0 flex items-center pl-3 pointer-events-none relative w-full mr-2">
+          <div class="inset-y-0 left-0 flex items-center pl-3  relative w-full mr-2">
             <div class="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
               <svg
                 aria-hidden="true"
@@ -62,7 +62,7 @@ function About() {
               className="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-3xl focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
               placeholder="Search"
               required
-            ></input>
+            />
           </div>
           <button class="bg-indigo-500 rounded-3xl p-3 shadow-lg shadow-indigo-500/50">
             Search

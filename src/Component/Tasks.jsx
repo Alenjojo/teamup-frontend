@@ -3,7 +3,7 @@ import TasksCard from "./TasksCard";
 export default function Tasks(){
     return(
         <div className="flex flex-col justify-start ">
-            <div className="flex justify-between rounded-lg bg-pink-500
+            <div className="flex justify-between rounded-lg 
                                 p-4 m-4 shadow-xl
                 ">
                 <div className="flex flex-col  items-start ml-4  ">
@@ -25,7 +25,7 @@ export default function Tasks(){
 
             </div>
 
-            <div className="flex flex-col  p-5 m-4 shadow-xl rounded-lg bg-red-500 justify-evenly">
+            <div className="flex flex-col  p-5 m-4 shadow-xl rounded-lg justify-evenly ">
                 <div className="flex justify-between text-xl mb-3">
                     <div className="flex flex-col items-start ">
                         <span >Weekly Activity</span>

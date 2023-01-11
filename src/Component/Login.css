@@ -52,8 +52,9 @@
     font-weight: 400;
     opacity: 80%;
     padding-top: 17px;
-    margin-right: 424px;
     padding-bottom: 4px;
+    text-align:left;
+    margin-left: 35.4%;
   }
 .login-form > div > input{
     border-radius: 10px;
@@ -73,10 +74,10 @@
   }
   .login-form > button {
     margin-top: 24px;
-    margin-left: 13px;
+    
     min-height: 50px;
-    width: max(348px, 32.6vw);
-    font-size: 1.7em;
+    width: max( 30vw);
+    font-size: 1.5em;
     border-radius: 10px;
     color: white;
     border: none;
