@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import axios from "../Utils/axios-instance";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 
 import "./Login.css";
 import Navbar from "./NavBar.js";
 import { useNavigate } from "react-router-dom";
+import { loginUser } from "../Services/UserServices";
 
 export default function Login() {
   const [email, setEmail] = useState();
@@ -21,24 +21,15 @@ export default function Login() {
       password: password,
     });
     //call login api
-    axios({
-      method: "post",
-      url: "user/token",
-      data: payload,
-    })
-      .then(function (response) {
-        if (response.status === 200) {
-          console.log(response.status);
-          //Navigate
-          localStorage.setItem("user-data", JSON.stringify(response.data));
-          navigate("/home");
-        } else {
-          //Something went wrong
-        }
-      })
-      .catch(function (error) {
-        console.log(error.response.status);
-      });
+    // await loginUser(payload).then((response) => {
+    //   localStorage.setItem("user-data", JSON.stringify(response.data));
+    //   navigate("/home");
+    // });
+    const response = await loginUser(payload);
+    if (response.status === 200) {
+      localStorage.setItem("user-data", JSON.stringify(response.data));
+      navigate("/home");
+    }
   };
 
   return (
