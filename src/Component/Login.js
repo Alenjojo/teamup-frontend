@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from "../assets/logo.svg";
 import "./Login.css";
 import Navbar from "./NavBar.js";
 import { useNavigate } from "react-router-dom";
-import { loginUser } from "../Services/UserServices";
+import { getData, loginUser, postData } from "../Services/UserServices";
 
 export default function Login() {
   const [email, setEmail] = useState();
@@ -20,16 +20,9 @@ export default function Login() {
       email: email,
       password: password,
     });
+
     //call login api
-    // await loginUser(payload).then((response) => {
-    //   localStorage.setItem("user-data", JSON.stringify(response.data));
-    //   navigate("/home");
-    // });
-    const response = await loginUser(payload);
-    if (response.status === 200) {
-      localStorage.setItem("user-data", JSON.stringify(response.data));
-      navigate("/home");
-    }
+    await loginUser("user/login", payload, navigate);
   };
 
   return (

@@ -5,6 +5,7 @@ import Tasks from "./Tasks";
 
 class Home extends Component {
   state = {};
+  componentDidUpdate() {}
   render() {
     return (
       <>

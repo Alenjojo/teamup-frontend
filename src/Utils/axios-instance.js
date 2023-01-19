@@ -13,8 +13,9 @@ const instance = axios.create({
 });
 export default instance;
 
-export function handleResponce(response) {
+export function handleResponce(response, navigate) {
   if (response.status === 401) {
+    localStorage.setItem("user-data", null);
+    navigate("/");
   }
-  return response;
 }
