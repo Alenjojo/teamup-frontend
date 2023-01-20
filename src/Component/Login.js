@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from "../assets/logo.svg";
 import "./Login.css";
 import Navbar from "./NavBar.js";
 import { useNavigate } from "react-router-dom";
-import { loginUser } from "../Services/UserServices";
+import { loginUser } from "../Services/ApiServices";
 
 export default function Login() {
   const [email, setEmail] = useState();
