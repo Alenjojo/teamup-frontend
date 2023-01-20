@@ -15,7 +15,7 @@ export default instance;
 
 export function handleResponce(response, navigate) {
   if (response.status === 401) {
-    localStorage.setItem("user-data", null);
+    localStorage.clear();
     navigate("/");
   }
 }

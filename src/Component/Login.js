@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from "../assets/logo.svg";
 import "./Login.css";
 import Navbar from "./NavBar.js";
 import { useNavigate } from "react-router-dom";
-import { getData, loginUser, postData } from "../Services/UserServices";
+import { loginUser } from "../Services/UserServices";
 
 export default function Login() {
   const [email, setEmail] = useState();
@@ -41,14 +41,14 @@ export default function Login() {
             <h1>Login</h1>
             <p className="req-info">Email</p>
             <div className="data">
-              <label className="inputs" for="email">
+              <label className="inputs" htmlFor="email">
                 <i className="fa-solid fa-envelope icons"></i>
               </label>
               <input id="email" onChange={(e) => setEmail(e.target.value)} />
             </div>
             <p className="req-info">Password</p>
             <div className="data">
-              <label for="password">
+              <label htmlFor="password">
                 <i className=" icons fa-solid fa-lock "></i>
               </label>
               <input

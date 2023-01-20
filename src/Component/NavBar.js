@@ -1,6 +1,6 @@
 import "./NavBar.css";
-import {motion} from "framer-motion"
-import { Link, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar(props) {
   let text = "";
@@ -13,7 +13,6 @@ export default function Navbar(props) {
       <motion.button
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.93 }}
-
         onClick={() => {
           navigate(linkText);
         }}
@@ -42,14 +41,13 @@ export default function Navbar(props) {
 
   return (
     <div className="navbar">
-      <div className="logo"
-       onClick={() => {
-        navigate("/");
-      }}>
-        <img
-          src={require("../assets/teamup_logo.png")}
-          alt="Logo.png"
-        />
+      <div
+        className="logo"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        <img src={require("../assets/teamup_logo.png")} alt="Logo.png" />
         <h1>TeamUp </h1>
       </div>
 
@@ -83,9 +81,8 @@ export default function Navbar(props) {
           </nav>
           <div className="end-section">
             <motion.button
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.93 }}
-
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.93 }}
               className="signup"
               onClick={() => {
                 navigate("/signup");
@@ -97,9 +94,8 @@ export default function Navbar(props) {
               <div className="bar"></div>
             </div>
             <motion.button
-             whileHover={{ scale: 1.04 }}
-             whileTap={{ scale: 0.93 }}
-             
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.93 }}
               className="login"
               onClick={() => {
                 navigate("/login");
