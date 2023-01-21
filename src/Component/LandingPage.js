@@ -1,13 +1,13 @@
-import "./Contents.css";
+import "./LandingPage.css";
 import Navbar from "./NavBar.js";
 import { motion } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ReactComponent as GreenFolder } from "../assets/green_folder.svg";
 import { ReactComponent as BlackFolder } from "../assets/black_folder.svg";
 import { ReactComponent as BlueFolder } from "../assets/blue_folder.svg";
 import { useEffect } from "react";
 
-export default function Content() {
+export default function LandingPage() {
   let navigate = useNavigate();
 
   useEffect(() => {
