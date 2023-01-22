@@ -1,6 +1,36 @@
 import TasksCard from "./TasksCard";
 
 export default function Tasks() {
+  const data = [
+    {
+      title: "1",
+      desc: "Hello type and scrambled it to make a type specimen book.",
+      members: [1, 2, 3],
+      status: 3,
+      time: "1:00",
+    },
+    {
+      title: "2",
+      desc: "Hello type and scrambled it to make a type specimen book.",
+      members: [1, 2, 3],
+      status: 3,
+      time: "1:00",
+    },
+    {
+      title: "3",
+      desc: "Hello type and scrambled it to make a type specimen book.",
+      members: [1, 2, 3],
+      status: 3,
+      time: "1:00",
+    },
+    {
+      title: "4",
+      desc: "Hello type and scrambled it to make a type specimen book.",
+      members: [1, 2, 3],
+      status: 3,
+      time: "1:00",
+    },
+  ];
   return (
     <div className="flex flex-col justify-start ">
       <div
@@ -19,7 +49,7 @@ export default function Tasks() {
                                      tracking-wider                 
                 "
         >
-          <span class="material-symbols-outlined ">create_new_folder</span>
+          <span className="material-symbols-outlined ">create_new_folder</span>
           <span className="pl-3">Add Tasks</span>
         </button>
       </div>
@@ -32,13 +62,15 @@ export default function Tasks() {
           </div>
 
           <div className="flex flex-col items-start">
-            <span class="material-symbols-outlined">more_horiz</span>
+            <span className="material-symbols-outlined">more_horiz</span>
             <span>image</span>
           </div>
         </div>
         <hr className="h-2 bg-orange-300 rounded-full" />
       </div>
-      <TasksCard />
+      {data.map((i) => (
+        <TasksCard data={i} />
+      ))}
     </div>
   );
 }
